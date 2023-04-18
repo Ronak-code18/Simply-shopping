@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/svg-with-js.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+</head>
+
+<body class="body mx-4" data-bs-backdrop="true">
+
+    <header class="sticky-top bg-white container-fluid">
+        <nav class="navbar navbar-expand-lg  d-flex justify-content-between ">
+            <div class="container-fluid py-2">
+                <div class="d-flex ms-4">
+                    <img class="img1 bg-transparent pe-3" src="showimages/shop.png">
+                </div>
+                <button class="navbar-toggler down position-absolute order-3 border-0 bg-light ms-3 end-0">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex">                   
+                    <div class="collapse navbar-collapse work" id="navbarSupportedContent" data-bs-backdrop="true">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item pe-4 ">
+                                <a class="nav-link activehome home redirect" aria-current="page" href="#home">HOME</a>
+                            </li>
+
+                            <li class="nav-item item-drop dropdown pe-4 position-relative">
+                                <a class="nav-link home " href="#" role="button" aria-expanded="false">
+                                    CATEGORY
+                                    <div class="position-absolute"></div>
+                                </a>
+
+
+                                <ul class="dropdown-menu position-absolute m-0">
+                                    <li><a class="dropdown-item redirect" data-category="smartphones"
+                                            href="#smartphone">Smartphones</a></li>
+                                    <li><a class="dropdown-item redirect" data-category="laptops"
+                                            href="#laptop">Laptops</a></li>
+
+                                    <li><a class="dropdown-item redirect" data-category="fragrances"
+                                            href="#fragrance">Fragrances</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-category="skincare"
+                                            href="#skincare">Skincare</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-category="groceries"
+                                            href="#grocerie">Groceries</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item item-drop dropdown pe-4">
+                                <a class="nav-link home" href="#" role="button" aria-expanded="false">
+                                    BRAND
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item redirect" data-brand="Apple" href="#apple">Apple</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-brand="OPPO" href="#oppo">OPPO</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-brand="Samsung"
+                                            href="#smasung">Samsung</a></li>
+                                    <li><a class="dropdown-item redirect" data-brand="Huawei" href="#huawei">Huawei</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-brand="Infinix"
+                                            href="#infinix">Infinix</a></li>
+                                    <li><a class="dropdown-item redirect" data-brand="HP Pavilion"
+                                            href="#hp pavilion">HP
+                                            Pavilion</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-brand="Dry Rose" href="#dry Rose">Dry
+                                            Rose</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect " data-brand="Flying Wooden"
+                                            href="#Flying Wooden">Flying
+                                            Wooden</a></li>
+                                    <li><a class="dropdown-item redirect" data-brand="Golden" href="#golden">Golden</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link wish redirect home" href="#whishlist">WISHLIST</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="cart2 nav-link redirect home" href="#cart">CART</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center flex-wrap me-5">
+                    <label class="px-2 text-dark" for="">Dhruval</label>
+                    <i class="fa-solid fa-user ps-2 fa-2x"></i>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <!-- carousel slider top -->
+    <main class="container-fluid">
+        <section class="position-relative">
+            <div id="carouselMainIndicators" class="carousel slide pb-4">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMainIndicators" data-bs-slide-to="0"
+                        class="mx-2 active " aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMainIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2" class=" mx-2 " aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselMainIndicators" data-bs-slide-to="2" class="mx-2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://source.unsplash.com/1400x750/?shoes" class="img-fluid" alt="...">
+                        <div class="carousel-caption captionText">
+                            <div class="col-lg-12 col-sm-12">
+                                <p>FASHION <br> CHANGING <br> ALWAYS</p>
+                                <button class="btnanimation text-white border-0  ">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://source.unsplash.com/1400x750/?clothes" class="img-fluid" alt="...">
+                        <div class="carousel-caption captionText">
+                            <div class="col-lg-12 col-sm-12">
+                                <p>FASHION <br> CHANGING <br> ALWAYS</p>
+                                <button class="btnanimation text-white border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://source.unsplash.com/1400x750/?devices" class="img-fluid" alt="...">
+                        <div class="carousel-caption captionText">
+                            <div class="col-lg-12 col-sm-12">
+                                <p>FASHION <br> CHANGING <br> ALWAYS</p>
+                                <button class="btnanimation text-white border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMainIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <!-- images of products -->
+            <div class="pt-5">
+                <div class="row text-center pb-3">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 600;">PREMIUM PRODUCTS</h2>
+                        <p style="color: #b4b4b4;">We recommend</p>
+                    </div>
+                </div>
+                <div class="row d-flex pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-3 ">
+                        <div class="shopProducts position-relative">
+                            <img src="https://source.unsplash.com/1400x700/?decoration"
+                                class="img-fluid homeimg object-fit" alt="...">
+                            <div class="textanimation position-absolute">
+                                <span>DECORATION</span>
+                            </div>
+                            <div class="btnanimation position-absolute">
+                                <a href="#" class=" text-decoration-none text-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
+                        <div class="shopProducts position-relative">
+                            <img src="https://source.unsplash.com/1400x700/?dress" class="img-fluid homeimg object-fit"
+                                alt="...">
+                            <div class="textanimation position-absolute">
+                                <span>DRESSES</span>
+                            </div>
+                            <div class="btnanimation position-absolute ">
+                                <a href="#" class=" text-decoration-none text-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
+                        <div class="shopProducts position-relative">
+                            <img src="https://source.unsplash.com/1400x700/?laptop" class="img-fluid homeimg object-fit"
+                                alt="...">
+                            <div class=" textanimation position-absolute">
+                                <span>LAPTOP</span>
+                            </div>
+                            <div class="btnanimation position-absolute">
+                                <a href="#" class=" text-decoration-none text-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
+                        <div class="shopProducts position-relative">
+                            <img src="https://source.unsplash.com/1400x700/?watches"
+                                class="img-fluid homeimg object-fit" alt="...">
+                            <div class="textanimation position-absolute">
+                                <span>WATCH</span>
+                            </div>
+                            <div class="btnanimation position-absolute">
+                                <a href="#" class=" text-decoration-none text-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newproducts mt-5">
+                <div class="row text-center pb-3">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <h2 class="" style="font-family: 'Cinzel', serif; font-weight: 600;">NEW<br>ARRIVAL</h2>
+                    </div>
+                </div>
+                <div class="row d-flex pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-2">
+                        <div class="card border-0 text-center img-fluid">
+                            <img src="showimages/fragnance.jpg" style="object-fit: cover;"
+                                class="card-img-top homeimg object-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fragrances</h5>
+                                <span class="fw-semibold card-title">49$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-2">
+                        <div class="card border-0 img-fluid text-center">
+                            <img src="showimages/furniture.jpg" class="card-img-top homeimg object-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Furniture</h5>
+                                <span class="fw-semibold card-title">499$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-2">
+                        <div class="card border-0 text-center img-fluid">
+                            <img src="showimages/w-top.png" class="card-img-top homeimg object-fit" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Women Tops</h5>
+                                <span class="fw-semibold card-title">199$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-2">
+                        <div class="card border-0 img-fluid text-center">
+                            <img src="showimages/shirt.webp" class="card-img-top homeimg object-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Men Shirt</h5>
+                                <span class="fw-semibold card-title">99$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-2">
+                        <div class="card border-0 img-fluid text-center">
+                            <img src="showimages/bag.jpg" class="card-img-top  homeimg object-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bags</h5>
+                                <span class="fw-semibold card-title">149$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-2">
+                        <div class="card border-0 img-fluid text-center">
+                            <img src="https://source.unsplash.com/1400x700/?sunglasses"
+                                class="card-img-top  homeimg object-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sunglasses</h5>
+                                <span class="fw-semibold card-title">299$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 pb-2">
+                        <div class="card border-0 img-fluid text-center">
+                            <img src="https://source.unsplash.com/1400x700/?lighting"
+                                class="card-img-top homeimg object-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lights</h5>
+                                <span class="fw-semibold card-title">199$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6  pb-2">
+                        <div class="card border-0 img-fluid text-center">
+                            <img src="https://source.unsplash.com/1400x700/?skincare"
+                                class="card-img-top  homeimg object-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Skin Products</h5>
+                                <span class="fw-semibold card-title">399$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-5 pb-5 text-center">
+                        <a href="" class="border-btn pe-auto">Browse More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection mt-4 mb-4 position-relative">
+            <div class="img-fluid"></div>
+            <div class="row">
+                <div class="abouttxt text-center ">
+                    <h2 class="display-3 pb-4" style="font-family: 'Cinzel', serif;">COLLECTION <br> HOUSES OUR
+                        FIRST-<br>EVER</h2>
+                    <a href="" class="btnanimation text-decoration-none text-white">About Us</a>
+                </div>
+            </div>
+        </section>
+        <div class="popular-item pt-4 pb-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 position-relative pb-2">
+                    <div class="img-overflow overflow-hidden">
+                        <img src="https://source.unsplash.com/600x400/?watches" class="object-fit pop-1">
+                    </div>
+                    <div class="position-absolute text-location">
+                        <p class="pb-3 display-6">Established fact that by the readable content</p>
+                        <a href="" class="btnanimation text-white text-decoration-none">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 position-relative">
+                    <div class="img-overflow overflow-hidden">
+                        <img src="https://source.unsplash.com/600x400/?shoes" class=" object-fit pop-1">
+                    </div>
+                    <div class="position-absolute text-location">
+                        <p class="pb-3 display-6">Established fact that by the readable content</p>
+                        <a href="" class="btnanimation text-white text-decoration-none">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <img src="services1.svg" class="pb-4">
+                        <h5>Fast & Free delivery</h5>
+                        <p style="color: #57667e;">Free delivery on all products</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <img src="services2.svg" class="pb-4">
+                        <h5>Secure services</h5>
+                        <p style="color: #57667e;">Provide securities on all payment</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <img src="services3.svg" class="pb-4">
+                        <h5>Ease transaction</h5>
+                        <p style="color: #57667e;">Diffrent paymnet option provided</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <img src="services4.svg" class="pb-4">
+                        <h5>24*7</h5>
+                        <p style="color: #57667e;">Service available at 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-5">
+            <div class="row datapush">
+                <div class="card border-0">
+
+                </div>
+            </div>
+
+        </div>
+        <footer class="text-center text-lg-start text-white mb-2 ">
+            <section class="d-flex justify-content-between p-3 pt-5" style="background-color: #e6e7ec">
+                <div class="d-flex w-100 justify-content-between">
+
+
+                </div>
+            </section>
+            <section class="pt-5" style="background: #17253f;">
+                <div class="row mt-3 justify-content-between">
+                    <div class="col-md-6 col-lg-8 col-xl-3 col-sm-12 mb-2 ps-5">
+                        <h6 class="text-uppercase text-start">bizzcorpy</h6>
+                        <hr class="mb-4 mt-0 mx-2" style="width: 60px; background-color: #fff; height: 2px;" />
+                        <p class="pb-3 text-start" style="color:#57667e;">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fuga rerum voluptates iusto
+                            dignissimos nam beatae, perferendis enim. Explicabo, adipisci.
+                        </p>
+                        <div class="d-flex flex-wrap mb-5">
+                            <div>
+                                <a href="" class=" me-3">
+                                    <i class="text-white fa-brands fa-google fs-4"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class=" me-3">
+                                    <i class="text-white fa-brands fa-instagram fs-4"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class=" me-3">
+                                    <i class="text-white fa-brands fa-linkedin fs-4"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="me-3">
+                                    <i class="text-white fa-brands fa-twitter fs-4"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class=" me-3">
+                                    <i class="text-white fa-brands fa-facebook fs-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 mb-2 ps-5">
+                        <h6 class="text-uppercase text-start">Products</h6>
+                        <hr class="mb-4 mt-0 " style="width: 60px; background-color: #fff; height: 2px;" />
+                        <p class="text-start ">
+                            <a href="#" class="font-color text-decoration-none">bootstrap</a>
+                        </p>
+                        <p class="text-start ">
+                            <a href="#" class="text-start font-color text-decoration-none">Wordpress</a>
+                        </p>
+                        <p class="text-start ">
+                            <a href="#" class="text-start font-color text-decoration-none">tailwind</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-xl-3 col-lg-8 col-sm-12  mb-2 ps-5">
+                        <h6 class="text-uppercase text-start">Useful links</h6>
+                        <hr class="mb-4 mt-0 mx-3" style="width: 60px; background-color: #fff; height: 2px;" />
+                        <p class="text-start ">
+                            <a href="#" class="font-color text-decoration-none">Become an Affiliate</a>
+                        </p>
+                        <p class="text-start ">
+                            <a href="#" class="font-color text-decoration-none">Shipping rates</a>
+                        </p>
+                        <p class="text-start ">
+                            <a href="#" class="font-color text-decoration-none">Work for us</a>
+                        </p>
+                        <p class="text-start ">
+                            <a href="#" class="font-color text-decoration-none">Order Now</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-sm-12 mb-2 ps-5">
+                        <h6 class="text-uppercase text-start">Contact</h6>
+                        <hr class="mb-4 mt-0  mx-1" style="width: 60px; background-color: #fff; height: 2px;" />
+                        <p class="d-flex flex-wrap text-start font-color">
+                            <i class="fa-solid fa-house me-2 "></i>Ahmedabad,Gujarat
+                        </p>
+                        <p class="text-start font-color">
+                            <i class="fa-solid fa-envelope me-2 "></i>abc@gmail.com
+                        </p>
+                        <p class="text-start font-color">
+                            <i class="fa-solid fa-phone me-2 "></i>+1 12345
+                        </p>
+                        <p class="text-start font-color">
+                            <i class="fa-solid fa-print me-2 "></i>+1 01234
+                        </p>
+                    </div>
+
+                </div>
+                <div class="text-center p-3 font-color">
+                    &copy;2023 Copyright:
+                    <a class=" text-decoration-none" href="">wwww.bizzcorpy.com</a>
+                </div>
+            </section>
+
+        </footer>
+        </div>
+    </main>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<script src='script.js'></script>
+
+</html>
