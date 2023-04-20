@@ -4,7 +4,7 @@ var wishlistProducts = [];
 var product;
 
 $(document).ready(function () {
-    $.getJSON('https://dummyjson.com/products/?skip=40&limit=4', function (data) {
+    $.getJSON('https://dummyjson.com/products/', function (data) {
         let productList = data.products;
         for (let i in productList) {
             productList[i].wishlist = 0;
